@@ -1,7 +1,3 @@
-#author: Aneetha
-#dte:14/05/2023
-#information
-
 @Calculator
 Feature: This feature will allow you do to all the calculator operations using parameters
 
@@ -12,12 +8,11 @@ Feature: This feature will allow you do to all the calculator operations using p
 
     Examples: 
       | num1 | num2 | result |
-      |    5 |   -7 |     -2 |
+      |   -5 |    8 |      3 |
       |    4 |    4 |      8 |
       |   15 |   12 |     27 |
 
   Scenario: This scenario will validate addition of multiple numbers
-    #if you want logic/code to work for single step tat is given use this if you want logic or data to all steps like given,when then use scenario outline
     Given I have below numbers
       | 6 |
       | 5 |
@@ -38,5 +33,5 @@ Feature: This feature will allow you do to all the calculator operations using p
     Given I want to buy below items in given quantity
       | Coffee      | 2 | 20 |
       | Burger      | 3 | 50 |
-      | Garlicbread | 1 | 15 |
+      | GarlicBread | 1 | 15 |
     Then I should get the bill amount as 205

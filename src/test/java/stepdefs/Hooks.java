@@ -12,18 +12,17 @@ import io.cucumber.java.After;
 import io.cucumber.java.Before;
 
 public class Hooks {
-	
-	public static WebDriver driver;	
+public static WebDriver driver;
 	
 	@Before("@Browser")
-	public void SetUp(){	
+	public void SetUp() {
 		
 		WebDriverManager.chromedriver().setup();
-		driver = new ChromeDriver();	
-		driver.manage().timeouts().implicitlyWait(3000, TimeUnit.MILLISECONDS);
+		driver = new ChromeDriver();
+		driver.manage().timeouts().implicitlyWait(3000,TimeUnit.MILLISECONDS);
 		driver.manage().window().maximize();
 	}
-		
+	
 	@After("@Browser")
 	public void TearDown() {
 		
