@@ -17,8 +17,8 @@ import io.cucumber.junit.CucumberOptions;
 		//tags= {"@Regression or @Sanity"} // either Regression or sanity
 		//tags= {"@Regression and @Sanity"} // both the tags should be there
 		//tags = {"@Calculator"} // feature level tag
-		tags = {"not @WIP"} // run all the scenarios except WIP
-		//tags = {"@Browser and not @WIP"} // run all the browser scenarios except WIP
+		//tags = {"not @WIP"} // run all the scenarios except WIP
+		tags = {"@Browser and not @WIP"} // run all the browser scenarios except WIP
 		
 		)
 
